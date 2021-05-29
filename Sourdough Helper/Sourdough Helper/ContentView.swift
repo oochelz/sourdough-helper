@@ -10,6 +10,7 @@ import UserNotifications
 
 struct ContentView: View {
     @State private var showingAlert = false
+    @State private var showingSuccess = false
     
     fileprivate func scheduleNotifications() {
         let content = UNMutableNotificationContent()
@@ -25,6 +26,7 @@ struct ContentView: View {
             let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
             UNUserNotificationCenter.current().add(request)
         }
+        showingSuccess = true
     }
     
     var body: some View {
@@ -48,6 +50,13 @@ struct ContentView: View {
                         title: Text("Enable Notifications"),
                         message: Text("To get alerts, you need to enable notifications in Settings."),
                         dismissButton: .default(Text("Got it"))
+                    )
+                })
+                .alert(isPresented: $showingSuccess, content: {
+                    Alert(
+                        title: Text("Timers Set"),
+                        message: Text("You'll get alerts to stretch your dough."),
+                        dismissButton: .default(Text("OK"))
                     )
                 })
                 .padding()
