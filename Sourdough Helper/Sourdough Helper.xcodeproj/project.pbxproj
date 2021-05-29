@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5ECA12D32661D47E00FBDC39 /* Sourdough_HelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA12D22661D47E00FBDC39 /* Sourdough_HelperApp.swift */; };
+		5ECA12D52661D47E00FBDC39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA12D42661D47E00FBDC39 /* ContentView.swift */; };
+		5ECA12D72661D47F00FBDC39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECA12D62661D47F00FBDC39 /* Assets.xcassets */; };
+		5ECA12DA2661D47F00FBDC39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECA12D92661D47F00FBDC39 /* Preview Assets.xcassets */; };
+		5ECA12E52661D47F00FBDC39 /* Sourdough_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA12E42661D47F00FBDC39 /* Sourdough_HelperTests.swift */; };
+		5ECA12F02661D48000FBDC39 /* Sourdough_HelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA12EF2661D48000FBDC39 /* Sourdough_HelperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5ECA12E12661D47F00FBDC39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ECA12C72661D47E00FBDC39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ECA12CE2661D47E00FBDC39;
+			remoteInfo = "Sourdough Helper";
+		};
+		5ECA12EC2661D48000FBDC39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5ECA12C72661D47E00FBDC39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5ECA12CE2661D47E00FBDC39;
+			remoteInfo = "Sourdough Helper";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5ECA12CF2661D47E00FBDC39 /* Sourdough Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sourdough Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECA12D22661D47E00FBDC39 /* Sourdough_HelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sourdough_HelperApp.swift; sourceTree = "<group>"; };
+		5ECA12D42661D47E00FBDC39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5ECA12D62661D47F00FBDC39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5ECA12D92661D47F00FBDC39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5ECA12DB2661D47F00FBDC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ECA12E02661D47F00FBDC39 /* Sourdough HelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sourdough HelperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECA12E42661D47F00FBDC39 /* Sourdough_HelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sourdough_HelperTests.swift; sourceTree = "<group>"; };
+		5ECA12E62661D47F00FBDC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5ECA12EB2661D48000FBDC39 /* Sourdough HelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sourdough HelperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECA12EF2661D48000FBDC39 /* Sourdough_HelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sourdough_HelperUITests.swift; sourceTree = "<group>"; };
+		5ECA12F12661D48000FBDC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5ECA12CC2661D47E00FBDC39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECA12DD2661D47F00FBDC39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECA12E82661D47F00FBDC39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ECA12C62661D47E00FBDC39 = {
+			isa = PBXGroup;
+			children = (
+				5ECA12D12661D47E00FBDC39 /* Sourdough Helper */,
+				5ECA12E32661D47F00FBDC39 /* Sourdough HelperTests */,
+				5ECA12EE2661D48000FBDC39 /* Sourdough HelperUITests */,
+				5ECA12D02661D47E00FBDC39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5ECA12D02661D47E00FBDC39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5ECA12CF2661D47E00FBDC39 /* Sourdough Helper.app */,
+				5ECA12E02661D47F00FBDC39 /* Sourdough HelperTests.xctest */,
+				5ECA12EB2661D48000FBDC39 /* Sourdough HelperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5ECA12D12661D47E00FBDC39 /* Sourdough Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5ECA12D22661D47E00FBDC39 /* Sourdough_HelperApp.swift */,
+				5ECA12D42661D47E00FBDC39 /* ContentView.swift */,
+				5ECA12D62661D47F00FBDC39 /* Assets.xcassets */,
+				5ECA12DB2661D47F00FBDC39 /* Info.plist */,
+				5ECA12D82661D47F00FBDC39 /* Preview Content */,
+			);
+			path = "Sourdough Helper";
+			sourceTree = "<group>";
+		};
+		5ECA12D82661D47F00FBDC39 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5ECA12D92661D47F00FBDC39 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5ECA12E32661D47F00FBDC39 /* Sourdough HelperTests */ = {
+			isa = PBXGroup;
+			children = (
+				5ECA12E42661D47F00FBDC39 /* Sourdough_HelperTests.swift */,
+				5ECA12E62661D47F00FBDC39 /* Info.plist */,
+			);
+			path = "Sourdough HelperTests";
+			sourceTree = "<group>";
+		};
+		5ECA12EE2661D48000FBDC39 /* Sourdough HelperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5ECA12EF2661D48000FBDC39 /* Sourdough_HelperUITests.swift */,
+				5ECA12F12661D48000FBDC39 /* Info.plist */,
+			);
+			path = "Sourdough HelperUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5ECA12CE2661D47E00FBDC39 /* Sourdough Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ECA12F42661D48000FBDC39 /* Build configuration list for PBXNativeTarget "Sourdough Helper" */;
+			buildPhases = (
+				5ECA12CB2661D47E00FBDC39 /* Sources */,
+				5ECA12CC2661D47E00FBDC39 /* Frameworks */,
+				5ECA12CD2661D47E00FBDC39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sourdough Helper";
+			productName = "Sourdough Helper";
+			productReference = 5ECA12CF2661D47E00FBDC39 /* Sourdough Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5ECA12DF2661D47F00FBDC39 /* Sourdough HelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ECA12F72661D48000FBDC39 /* Build configuration list for PBXNativeTarget "Sourdough HelperTests" */;
+			buildPhases = (
+				5ECA12DC2661D47F00FBDC39 /* Sources */,
+				5ECA12DD2661D47F00FBDC39 /* Frameworks */,
+				5ECA12DE2661D47F00FBDC39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ECA12E22661D47F00FBDC39 /* PBXTargetDependency */,
+			);
+			name = "Sourdough HelperTests";
+			productName = "Sourdough HelperTests";
+			productReference = 5ECA12E02661D47F00FBDC39 /* Sourdough HelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5ECA12EA2661D47F00FBDC39 /* Sourdough HelperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ECA12FA2661D48000FBDC39 /* Build configuration list for PBXNativeTarget "Sourdough HelperUITests" */;
+			buildPhases = (
+				5ECA12E72661D47F00FBDC39 /* Sources */,
+				5ECA12E82661D47F00FBDC39 /* Frameworks */,
+				5ECA12E92661D47F00FBDC39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ECA12ED2661D48000FBDC39 /* PBXTargetDependency */,
+			);
+			name = "Sourdough HelperUITests";
+			productName = "Sourdough HelperUITests";
+			productReference = 5ECA12EB2661D48000FBDC39 /* Sourdough HelperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5ECA12C72661D47E00FBDC39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					5ECA12CE2661D47E00FBDC39 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					5ECA12DF2661D47F00FBDC39 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5ECA12CE2661D47E00FBDC39;
+					};
+					5ECA12EA2661D47F00FBDC39 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 5ECA12CE2661D47E00FBDC39;
+					};
+				};
+			};
+			buildConfigurationList = 5ECA12CA2661D47E00FBDC39 /* Build configuration list for PBXProject "Sourdough Helper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5ECA12C62661D47E00FBDC39;
+			productRefGroup = 5ECA12D02661D47E00FBDC39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5ECA12CE2661D47E00FBDC39 /* Sourdough Helper */,
+				5ECA12DF2661D47F00FBDC39 /* Sourdough HelperTests */,
+				5ECA12EA2661D47F00FBDC39 /* Sourdough HelperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5ECA12CD2661D47E00FBDC39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECA12DA2661D47F00FBDC39 /* Preview Assets.xcassets in Resources */,
+				5ECA12D72661D47F00FBDC39 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECA12DE2661D47F00FBDC39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECA12E92661D47F00FBDC39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ECA12CB2661D47E00FBDC39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECA12D52661D47E00FBDC39 /* ContentView.swift in Sources */,
+				5ECA12D32661D47E00FBDC39 /* Sourdough_HelperApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECA12DC2661D47F00FBDC39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECA12E52661D47F00FBDC39 /* Sourdough_HelperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ECA12E72661D47F00FBDC39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECA12F02661D48000FBDC39 /* Sourdough_HelperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ECA12E22661D47F00FBDC39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ECA12CE2661D47E00FBDC39 /* Sourdough Helper */;
+			targetProxy = 5ECA12E12661D47F00FBDC39 /* PBXContainerItemProxy */;
+		};
+		5ECA12ED2661D48000FBDC39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5ECA12CE2661D47E00FBDC39 /* Sourdough Helper */;
+			targetProxy = 5ECA12EC2661D48000FBDC39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5ECA12F22661D48000FBDC39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5ECA12F32661D48000FBDC39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5ECA12F52661D48000FBDC39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Sourdough Helper/Preview Content\"";
+				DEVELOPMENT_TEAM = GP3S7BL94M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Sourdough Helper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hazelcake.Sourdough-Helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5ECA12F62661D48000FBDC39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Sourdough Helper/Preview Content\"";
+				DEVELOPMENT_TEAM = GP3S7BL94M;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Sourdough Helper/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hazelcake.Sourdough-Helper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5ECA12F82661D48000FBDC39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GP3S7BL94M;
+				INFOPLIST_FILE = "Sourdough HelperTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hazelcake.Sourdough-HelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sourdough Helper.app/Sourdough Helper";
+			};
+			name = Debug;
+		};
+		5ECA12F92661D48000FBDC39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GP3S7BL94M;
+				INFOPLIST_FILE = "Sourdough HelperTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hazelcake.Sourdough-HelperTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sourdough Helper.app/Sourdough Helper";
+			};
+			name = Release;
+		};
+		5ECA12FB2661D48000FBDC39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GP3S7BL94M;
+				INFOPLIST_FILE = "Sourdough HelperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hazelcake.Sourdough-HelperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sourdough Helper";
+			};
+			name = Debug;
+		};
+		5ECA12FC2661D48000FBDC39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GP3S7BL94M;
+				INFOPLIST_FILE = "Sourdough HelperUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hazelcake.Sourdough-HelperUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sourdough Helper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5ECA12CA2661D47E00FBDC39 /* Build configuration list for PBXProject "Sourdough Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ECA12F22661D48000FBDC39 /* Debug */,
+				5ECA12F32661D48000FBDC39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ECA12F42661D48000FBDC39 /* Build configuration list for PBXNativeTarget "Sourdough Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ECA12F52661D48000FBDC39 /* Debug */,
+				5ECA12F62661D48000FBDC39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ECA12F72661D48000FBDC39 /* Build configuration list for PBXNativeTarget "Sourdough HelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ECA12F82661D48000FBDC39 /* Debug */,
+				5ECA12F92661D48000FBDC39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ECA12FA2661D48000FBDC39 /* Build configuration list for PBXNativeTarget "Sourdough HelperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ECA12FB2661D48000FBDC39 /* Debug */,
+				5ECA12FC2661D48000FBDC39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5ECA12C72661D47E00FBDC39 /* Project object */;
+}
