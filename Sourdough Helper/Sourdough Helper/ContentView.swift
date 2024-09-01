@@ -11,8 +11,8 @@ import UserNotifications
 struct ContentView: View {
     @State private var showingAlert = false
     @State private var showingSuccess = false
-    @State private var intervalInMin = 5.0
-    @State private var durationInHr = 1.0
+    @State private var intervalInMin = 30.0
+    @State private var durationInHr = 4.0
     
     fileprivate func scheduleNotifications() {
         let content = UNMutableNotificationContent()
