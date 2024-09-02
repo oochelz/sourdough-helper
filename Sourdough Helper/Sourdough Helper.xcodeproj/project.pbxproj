@@ -13,6 +13,10 @@
 		5ECA12DA2661D47F00FBDC39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECA12D92661D47F00FBDC39 /* Preview Assets.xcassets */; };
 		5ECA12E52661D47F00FBDC39 /* Sourdough_HelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA12E42661D47F00FBDC39 /* Sourdough_HelperTests.swift */; };
 		5ECA12F02661D48000FBDC39 /* Sourdough_HelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECA12EF2661D48000FBDC39 /* Sourdough_HelperUITests.swift */; };
+		5EE94F5B2C86003700B67C35 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE94F5A2C86003700B67C35 /* Task.swift */; };
+		5EE94F5D2C86019200B67C35 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE94F5C2C86019200B67C35 /* Schedule.swift */; };
+		5EE94F5F2C86215A00B67C35 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE94F5E2C86215A00B67C35 /* ScheduleView.swift */; };
+		5EE94F612C86221900B67C35 /* CreateScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE94F602C86221900B67C35 /* CreateScheduleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		5ECA12EB2661D48000FBDC39 /* Sourdough HelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sourdough HelperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECA12EF2661D48000FBDC39 /* Sourdough_HelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sourdough_HelperUITests.swift; sourceTree = "<group>"; };
 		5ECA12F12661D48000FBDC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EE94F5A2C86003700B67C35 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5EE94F5C2C86019200B67C35 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		5EE94F5E2C86215A00B67C35 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		5EE94F602C86221900B67C35 /* CreateScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScheduleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				5ECA12D62661D47F00FBDC39 /* Assets.xcassets */,
 				5ECA12DB2661D47F00FBDC39 /* Info.plist */,
 				5ECA12D82661D47F00FBDC39 /* Preview Content */,
+				5EE94F5A2C86003700B67C35 /* Task.swift */,
+				5EE94F5C2C86019200B67C35 /* Schedule.swift */,
+				5EE94F5E2C86215A00B67C35 /* ScheduleView.swift */,
+				5EE94F602C86221900B67C35 /* CreateScheduleView.swift */,
 			);
 			path = "Sourdough Helper";
 			sourceTree = "<group>";
@@ -260,7 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE94F5F2C86215A00B67C35 /* ScheduleView.swift in Sources */,
 				5ECA12D52661D47E00FBDC39 /* ContentView.swift in Sources */,
+				5EE94F5B2C86003700B67C35 /* Task.swift in Sources */,
+				5EE94F612C86221900B67C35 /* CreateScheduleView.swift in Sources */,
+				5EE94F5D2C86019200B67C35 /* Schedule.swift in Sources */,
 				5ECA12D32661D47E00FBDC39 /* Sourdough_HelperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +443,7 @@
 				INFOPLIST_FILE = "Sourdough Helper/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sourdough Helper";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,7 +467,7 @@
 				INFOPLIST_FILE = "Sourdough Helper/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Sourdough Helper";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

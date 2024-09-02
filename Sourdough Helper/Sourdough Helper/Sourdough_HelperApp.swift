@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Sourdough_HelperApp: App {
+    @State private var schedule: Schedule = Schedule()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(schedule)
         }
     }
 }
