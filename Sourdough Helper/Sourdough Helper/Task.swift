@@ -11,29 +11,16 @@ import UserNotifications
 @Observable class Task: Identifiable {
     var name: String
     var isComplete: Bool = false
-    var durationInMin: Int
     var startTime: Date? = nil
     
-    public init(name: String, durationInMin: Int, isComplete: Bool = false) {
+    public init(name: String, isComplete: Bool = false, startTime: Date? = nil) {
         self.name = name
-        self.durationInMin = durationInMin
         self.isComplete = isComplete
-    }
-    
-    public func start() -> Void {
-        self.startTime = Date()
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Stretch the dough"
-        content.body = "It's that time. Stretchy stretchy."
-        content.sound = UNNotificationSound.default
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: Double(self.durationInMin * 60), repeats: false)
-        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request)
+        self.startTime = startTime
     }
     
     public func complete() -> Void {
         self.isComplete = true
+        self.startTime = Date()
     }
 }

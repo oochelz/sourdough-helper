@@ -13,29 +13,29 @@ struct ScheduleView: View {
     var body: some View {
         List(schedule.tasks) { task in
             VStack(alignment: .leading) {
-                HStack(alignment: .top) {
+                HStack {
                     Button("", systemImage: task.isComplete ? "checkmark.circle.fill" : "circle") {
                         schedule.completeTask()
                     }
                     .disabled(task.isComplete)
-                    VStack(alignment: .leading)  {
-                        Text(task.name)
-                        if (!task.isComplete && (task.startTime) != nil) {
-                            Text("Started \(DateFormatter.localizedString(from: task.startTime!, dateStyle: .short, timeStyle: .short))")
-                                .font(.footnote)
-                                .foregroundColor(Color("Mustard"))
-                        }
-                    }
+                    Text(task.name)
+                        .font(.title3)
                 }
-                if (task.durationInMin > 0) {
+                
+                if (schedule.tasks.last?.id != task.id) {
                     HStack {
                         Image(systemName: "ellipsis")
                             .foregroundColor(Color("Pistachio"))
                             .font(.title)
                             .padding(.trailing, 12)
-                        Text("^[\(task.durationInMin) minutes](inflect:true)")
-                            .font(.footnote)
-                            .foregroundColor(Color("Pistachio"))
+                        HStack {
+                            Text("Wait ^[\(schedule.intervalInMin) minutes](inflect:true)")
+                                .font(.footnote)
+                                .foregroundColor(Color("Pistachio"))
+                            if (task.startTime != nil) {
+                                timerText(startTime: task.startTime!)
+                            }
+                        }
                     }
                     .padding(.top, 12)
                     .padding(.bottom, 6)
@@ -44,9 +44,18 @@ struct ScheduleView: View {
             .listRowSeparator(.hidden)
         }
     }
+    
+    private func timerText(startTime: Date) -> some View {
+        let end = startTime.advanced(by: TimeInterval(schedule.intervalInMin * 60))
+        let formattedTime = DateFormatter.localizedString(from: end, dateStyle: .none, timeStyle: .short)
+        
+        return Text("(at \(formattedTime))")
+            .font(.footnote)
+            .foregroundColor(Color("Mustard"))
+    }
 }
 
 #Preview {
     ScheduleView()
-        .environment(Schedule().create(intervalInMin: 5, totalDurationInHr: 3))
+        .environment(Schedule().create(intervalInMin: 20, totalDurationInHr: 1))
 }
