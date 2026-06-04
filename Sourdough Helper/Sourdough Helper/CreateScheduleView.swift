@@ -40,7 +40,7 @@ struct CreateScheduleView: View {
                     Text("How often do you need to fold?")
                     HStack {
                         Image(systemName: "minus")
-                        Slider(value: $intervalInMin, in: 2...60, step: 2)
+                        Slider(value: $intervalInMin, in: 5...60, step: 5)
                         Image(systemName: "plus")
                     }
                     Text("Every \(Int(intervalInMin)) minutes")
