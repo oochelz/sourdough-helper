@@ -43,7 +43,7 @@ struct Sourdough_HelperApp: App {
     private let notificationDelegate: NotificationDelegate
 
     init() {
-        let schedule = Schedule()
+        let schedule = Schedule.load() ?? Schedule()
         self.notificationDelegate = NotificationDelegate(schedule: schedule)
         self._schedule = State(initialValue: schedule)
 
