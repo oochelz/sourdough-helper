@@ -1,11 +1,8 @@
 //
-//  Sourdough_HelperApp.swift
+//  NotificationDelegate.swift
 //  Sourdough Helper
 //
-//  Created by Chelsea Youmans on 5/28/21.
-//
 
-import SwiftUI
 import UserNotifications
 
 class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
@@ -34,27 +31,5 @@ class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
         withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
     ) {
         completionHandler([.banner, .sound])
-    }
-}
-
-@main
-struct Sourdough_HelperApp: App {
-    @State private var schedule: Schedule = Schedule()
-    private let notificationDelegate: NotificationDelegate
-
-    init() {
-        let schedule = Schedule()
-        self.notificationDelegate = NotificationDelegate(schedule: schedule)
-        self._schedule = State(initialValue: schedule)
-
-        registerNotificationCategories()
-        UNUserNotificationCenter.current().delegate = notificationDelegate
-    }
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(schedule)
-        }
     }
 }

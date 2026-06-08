@@ -12,7 +12,8 @@ import UserNotifications
     var name: String
     var isComplete: Bool = false
     var startTime: Date? = nil
-    
+    var pendingNotificationID: String? = nil
+
     public init(name: String, isComplete: Bool = false, startTime: Date? = nil) {
         self.name = name
         self.isComplete = isComplete
