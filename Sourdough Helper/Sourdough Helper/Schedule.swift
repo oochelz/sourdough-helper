@@ -31,13 +31,54 @@ func registerNotificationCategories() {
     UNUserNotificationCenter.current().setNotificationCategories([foldCategory])
 }
 
-@Observable class Schedule {
+@Observable class Schedule: Codable {
     var tasks: [Task]
     var intervalInMin: Int = 0
     var bulkFermentationEndTime: Date? = nil
 
+    private static let userDefaultsKey = "savedSchedule"
+
     public init() {
         self.tasks = []
+    }
+
+    // MARK: - Persistence
+
+    func save() {
+        if let data = try? JSONEncoder().encode(self) {
+            UserDefaults.standard.set(data, forKey: Self.userDefaultsKey)
+        }
+    }
+
+    static func load() -> Schedule? {
+        guard let data = UserDefaults.standard.data(forKey: userDefaultsKey),
+              let schedule = try? JSONDecoder().decode(Schedule.self, from: data)
+        else { return nil }
+        return schedule
+    }
+
+    static func clear() {
+        UserDefaults.standard.removeObject(forKey: userDefaultsKey)
+    }
+
+    // MARK: - Codable
+
+    enum CodingKeys: String, CodingKey {
+        case tasks, intervalInMin, bulkFermentationEndTime
+    }
+
+    required init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        tasks = try container.decode([Task].self, forKey: .tasks)
+        intervalInMin = try container.decode(Int.self, forKey: .intervalInMin)
+        bulkFermentationEndTime = try container.decodeIfPresent(Date.self, forKey: .bulkFermentationEndTime)
+    }
+
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(tasks, forKey: .tasks)
+        try container.encode(intervalInMin, forKey: .intervalInMin)
+        try container.encodeIfPresent(bulkFermentationEndTime, forKey: .bulkFermentationEndTime)
     }
 
     public func create(intervalInMin: Int, numFolds: Int, bulkFermentationInHr: Int) -> Schedule {
@@ -58,6 +99,7 @@ func registerNotificationCategories() {
 
         completeTask()
         scheduleBulkFermentationNotification(after: bulkDurationSec)
+        save()
 
         return self
     }
@@ -83,6 +125,8 @@ func registerNotificationCategories() {
         } else if let next = nextIncomplete {
             next.pendingNotificationID = queueFoldNotification()
         }
+
+        save()
     }
 
     @discardableResult
