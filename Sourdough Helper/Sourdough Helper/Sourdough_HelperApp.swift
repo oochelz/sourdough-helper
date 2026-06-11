@@ -21,8 +21,9 @@ class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate {
         didReceive response: UNNotificationResponse,
         withCompletionHandler completionHandler: @escaping () -> Void
     ) {
-        if response.actionIdentifier == UNNotificationAction.markCompleteIdentifier {
-            schedule.completeTask()
+        if response.actionIdentifier == UNNotificationAction.markCompleteIdentifier,
+           let next = schedule.tasks.first(where: { !$0.isComplete }) {
+            schedule.completeTask(next)
         }
         completionHandler()
     }
