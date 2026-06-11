@@ -20,11 +20,12 @@ struct ScheduleView: View {
                 }
             }
 
-            ForEach(schedule.tasks) { task in
+            let allPrecedingComplete = schedule.tasks.dropLast().allSatisfy(\.isComplete)
+            ForEach(schedule.tasks.filter { $0.id != schedule.tasks.last?.id || allPrecedingComplete }) { task in
                 VStack(alignment: .leading) {
                     HStack {
                         Button("", systemImage: task.isComplete ? "checkmark.circle.fill" : "circle") {
-                            schedule.completeTask()
+                            schedule.completeTask(task)
                         }
                         .disabled(task.isComplete)
                         Text(task.name)

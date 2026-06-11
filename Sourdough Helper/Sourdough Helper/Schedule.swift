@@ -97,19 +97,16 @@ func registerNotificationCategories() {
         }
         tasks.append(Task(name: "Done!"))
 
-        completeTask()
+        if let begin = tasks.first { completeTask(begin) }
         scheduleBulkFermentationNotification(after: bulkDurationSec)
         save()
 
         return self
     }
 
-    public func completeTask() -> Void {
-        // TODO: Make this modify the given task, instead of finding one in the list
-        let task = tasks.first { t in
-            t.isComplete == false
-        }
-        guard let task = task else { return }
+    public func completeTask(_ task: Task) -> Void {
+        // Guard: only the next incomplete task may be completed
+        guard let next = tasks.first(where: { !$0.isComplete }), next.id == task.id else { return }
 
         // Cancel any pending notification for this task (fired early by manual tap)
         if let notificationID = task.pendingNotificationID {
